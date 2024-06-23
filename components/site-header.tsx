@@ -4,6 +4,7 @@ import Link from "next/link";
 import { buttonVariants } from "./ui/button";
 import { Icons } from "./icons";
 import { MainNav } from "./main-nav";
+import { MobileNav } from "./mobile-nav";
 
 export function SiteHeader() {
     return (
@@ -16,11 +17,12 @@ export function SiteHeader() {
                     <Link href={siteConfig.links.github} target="_blank" rel="noreferrer">
                         <div className= {cn(
                             buttonVariants({ variant: "ghost"}),
-                            "w-10 px-0")}>
+                            "w-10 px-0 hidden sm:inline-flex")}>
                                 <Icons.github className="h-4 w-4" />
                                 <span className="sr-only">Github</span>
                         </div>
                     </Link>
+                    <MobileNav />
                 </nav>
                 </div>
         </div>

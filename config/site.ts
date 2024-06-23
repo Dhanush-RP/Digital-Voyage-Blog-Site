@@ -1,5 +1,5 @@
 export const siteConfig = {
-    name: "My Blo",
+    name: "My Blog",
     url: "https://example.com",
     description: "NextJs Blog",
     author: "Dhanush",
